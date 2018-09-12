@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby-starter-pack",
+  "description": "Gatsby Starter Pack",
   "version": "1.0.0",
   "author": "John Munson <johncmunson91@gmail.com>",
   "dependencies": {
