@@ -5,4 +5,3 @@
  */
 
 // You can delete this file if you're not using it
-console.log('Log a debug level message.')
