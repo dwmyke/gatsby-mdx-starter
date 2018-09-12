@@ -1,6 +1,6 @@
 # Gatsby Starter Pack
 
-This is my own opinionated setup for what a Gatsby default baseline should be. I began with [gatsby-starter-default v2](https://github.com/gatsbyjs/gatsby-starter-default) and started making modifications and enhancements from there.
+This is my own opinionated setup for what a Gatsby default baseline should be. I began with [gatsby-starter-default v2](https://github.com/gatsbyjs/gatsby-starter-default) and started making modifications and enhancements from there. This is still a work in progress for the time being.
 
 ### Changelog
 
