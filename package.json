@@ -20,7 +20,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write '**/*.{js,json,css,md}'",
+    "format": "prettier --write '{,!(node_modules|.cache|public)/**/}*.{js,json,css,md}'",
     "lint": "./node_modules/.bin/eslint '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -38,7 +38,7 @@
     }
   },
   "lint-staged": {
-    "**/*.{js,json,css,md}": [
+    "{,!(node_modules|.cache|public)/**/}*.{js,json,css,md}": [
       "prettier --write",
       "git add"
     ]
