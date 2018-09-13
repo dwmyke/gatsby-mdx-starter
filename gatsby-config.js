@@ -17,6 +17,13 @@ module.exports = {
       }
     },
     'gatsby-plugin-offline',
-    'gatsby-mdx'
+    {
+      resolve: 'gatsby-mdx',
+      options: {
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout.js')
+        }
+      }
+    }
   ]
 }
