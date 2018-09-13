@@ -18,6 +18,8 @@ This is my own opinionated setup for what a Gatsby default baseline should be. I
 
 ### Changelog
 
+- 9/13/18
+  - add support for mdx and react-live
 - 9/12/18
   - remove `yarn.lock` (I prefer using npm)
   - modify `.prettierrc` settings
