@@ -5,6 +5,7 @@
   "author": "John Munson <johncmunson91@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^0.15.2",
+    "@mdx-js/tag": "^0.15.0",
     "gatsby": "next",
     "gatsby-mdx": "^0.1.3",
     "gatsby-plugin-manifest": "next",
@@ -13,7 +14,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-live": "^1.11.0"
   },
   "keywords": [
     "gatsby"
