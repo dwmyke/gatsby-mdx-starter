@@ -7,7 +7,7 @@ import { MDXProvider } from '@mdx-js/tag'
 import Header from './header'
 import './layout.css'
 
-const ReactCodeSandbox = ({ children, ...props }) => (
+const ReactCodeSandbox = ({ children }) => (
   <LiveProvider code={children}>
     <LiveEditor />
     <LiveError />
@@ -15,7 +15,7 @@ const ReactCodeSandbox = ({ children, ...props }) => (
   </LiveProvider>
 )
 
-const Layout = ({ children, ...props }) => (
+const Layout = ({ children }) => (
   <MDXProvider components={{ code: ReactCodeSandbox }}>
     <StaticQuery
       query={graphql`
@@ -54,6 +54,10 @@ const Layout = ({ children, ...props }) => (
     />
   </MDXProvider>
 )
+
+ReactCodeSandbox.propTypes = {
+  children: PropTypes.node.isRequired
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SampleComponent = props => (
+const SampleComponent = () => (
   <div style={{ color: 'red' }}>
-    I'm a React component imported into an .mdx file!
+    I&apos;m a React component imported into an .mdx file!
   </div>
 )
 
