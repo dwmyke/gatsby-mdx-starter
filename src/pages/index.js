@@ -1,21 +1,43 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
-const IndexPage = () => (
+const IndexPage = props => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-    <br />
-    <Link to="/mdx/">Go to mdx</Link>
-    <br />
-    <Link to="/styled-components/">Go to styled-components</Link>
-    <br />
-    <Link to="/react-live/">Go to react-live</Link>
+    {props.data.allMdx.edges.map((edge, i) => (
+      <Link to={`/${edge.node.parent.name}/`} key={i}>
+        {edge.node.parent.name}
+      </Link>
+    ))}
   </Layout>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx {
+      edges {
+        node {
+          parent {
+            ... on File {
+              name
+              absolutePath
+              relativePath
+            }
+          }
+          timeToRead
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  }
+`

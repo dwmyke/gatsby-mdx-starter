@@ -4,9 +4,13 @@ This is my own opinionated setup for what a Gatsby default baseline should be. I
 
 ### Todo
 
-- mdx (or filestystem plugin combined w/ markdown plugin)
-- styled components or emotion
-- typography
+- ~~mdx (or filestystem plugin combined w/ markdown plugin)~~
+- update prettier to support mdx
+- ~~styled components or emotion~~
+- ~~typography~~
+- better encapsulation of react-live css. alternatively, submit PR back to react-live so they can better support "bring your own styles"
+- support frontmatter in .md and .mdx
+- better 404 page
 - gatsby image
 - Setup storybook (or similar)
 - Add test suite
@@ -15,14 +19,3 @@ This is my own opinionated setup for what a Gatsby default baseline should be. I
   - cypress
   - add to the precommit routine
     - [pre-commit](https://github.com/observing/pre-commit) or [husky](https://github.com/typicode/husky) might help
-
-### Changelog
-
-- 9/13/18
-  - add support for mdx and react-live
-- 9/12/18
-  - remove `yarn.lock` (I prefer using npm)
-  - modify `.prettierrc` settings
-  - run prettier as a pre-commit git hook
-  - add basic eslint integration and npm script
-  - add prop-types package

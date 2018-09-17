@@ -14,6 +14,7 @@
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-styled-components": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
+    "gatsby-source-filesystem": "^1.5.39",
     "polished": "^2.0.3",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
