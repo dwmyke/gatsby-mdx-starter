@@ -13,6 +13,8 @@ const IndexPage = () => (
     <Link to="/mdx/">Go to mdx</Link>
     <br />
     <Link to="/styled-components/">Go to styled-components</Link>
+    <br />
+    <Link to="/react-live/">Go to react-live</Link>
   </Layout>
 )
 
