@@ -1,16 +1,24 @@
 import React from 'react'
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
+import Link from '../components/link'
+import { rhythm } from '../utils/typography'
 import Layout from '../components/layout'
 
-const IndexPage = props => (
-  <Layout location={props.location}>
-    {props.data.allMdx.edges.map((edge, i) => (
-      <div key={i}>
-        <Link to={`/${edge.node.parent.name}/`}>
-          {edge.node.frontmatter.title}
-        </Link>
-        &nbsp;-&nbsp;
-        {edge.node.frontmatter.date}
+const IndexPage = ({ data, location }) => (
+  <Layout location={location}>
+    {data.allMdx.edges.map(({ node }) => (
+      <div key={node.id}>
+        <h3
+          style={{
+            marginBottom: rhythm(1 / 4)
+          }}
+        >
+          <Link to={`/${node.parent.name}/`}>
+            {node.frontmatter.title || node.parent.name}
+          </Link>
+        </h3>
+        <small>{node.frontmatter.date}</small>
+        <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
       </div>
     ))}
   </Layout>
@@ -28,6 +36,8 @@ export const pageQuery = graphql`
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          id
+          excerpt
           parent {
             ... on File {
               name

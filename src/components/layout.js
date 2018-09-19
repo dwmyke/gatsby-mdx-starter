@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import { rhythm } from '../utils/typography'
+import './layout.css'
 
 const Layout = ({ children, location }) => (
   <StaticQuery
@@ -31,7 +32,7 @@ const Layout = ({ children, location }) => (
         <div
           style={{
             margin: '0 auto',
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(22),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
           }}
         >

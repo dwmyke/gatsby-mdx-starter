@@ -1,17 +1,15 @@
 import Typography from 'typography'
 
 const typography = new Typography({
+  title: 'practical typography',
   baseFontSize: '18px',
-  baseLineHeight: 1.666,
-  headerFontFamily: [
-    'Avenir Next',
-    'Helvetica Neue',
-    'Segoe UI',
-    'Helvetica',
-    'Arial',
-    'sans-serif'
-  ],
-  bodyFontFamily: ['Georgia', 'serif']
+  baseLineHeight: 1.4,
+  scaleRatio: 1.5,
+  headerFontFamily: ['Source Sans Pro', 'Verdana', 'sans-serif'],
+  bodyFontFamily: ['Source Serif Pro', 'Georgia', 'serif'],
+  headerGray: 20,
+  bodyGray: 20,
+  blockMarginBottom: 1
 })
 
 // Hot reload typography in development.

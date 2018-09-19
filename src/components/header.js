@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from './link'
 import Headroom from 'react-headroom'
+import SmallCap from './small-cap'
 import { rhythm, scale } from '../utils/typography'
 import PropTypes from 'prop-types'
 
@@ -11,26 +12,19 @@ const Header = ({ siteTitle, location }) => {
       <Headroom
         style={{
           margin: '0 auto',
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(22),
           background: 'white',
           boxShadow: '0px 15px 10px -15px gray'
         }}
       >
         <div
           style={{
-            ...scale(1.5),
+            ...scale(1.25),
             padding: `${rhythm(0.25)} ${rhythm(0.5)}`
           }}
         >
-          <Link
-            to="/"
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit'
-            }}
-          >
-            {siteTitle}
+          <Link to="/">
+            <SmallCap>{siteTitle}</SmallCap>
           </Link>
         </div>
       </Headroom>
@@ -40,26 +34,19 @@ const Header = ({ siteTitle, location }) => {
       <Headroom
         style={{
           margin: '0 auto',
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(22),
           background: 'white',
           boxShadow: '0px 15px 10px -15px gray'
         }}
       >
         <div
           style={{
-            ...scale(1),
+            ...scale(0.5),
             padding: `${rhythm(0.25)} ${rhythm(0.5)}`
           }}
         >
-          <Link
-            to="/"
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit'
-            }}
-          >
-            {siteTitle}
+          <Link to="/">
+            <SmallCap>{siteTitle}</SmallCap>
           </Link>
         </div>
       </Headroom>
