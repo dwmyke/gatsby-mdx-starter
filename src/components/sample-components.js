@@ -1,10 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export const PureComponent = () => (
-  <div style={{ color: 'red' }}>
-    I&apos;m a React component imported into an .mdx file!
-  </div>
+export const PureComponent = ({ text }) => (
+  <div style={{ color: 'red' }}>{text}</div>
 )
+
+PureComponent.propTypes = {
+  text: PropTypes.string
+}
 
 // for react-live demo
 export const componentClassExample = `

@@ -1,14 +1,17 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/layout'
 
 const IndexPage = props => (
-  <Layout>
+  <Layout location={props.location}>
     {props.data.allMdx.edges.map((edge, i) => (
-      <Link to={`/${edge.node.parent.name}/`} key={i}>
-        {edge.node.parent.name}
-      </Link>
+      <div key={i}>
+        <Link to={`/${edge.node.parent.name}/`}>
+          {edge.node.frontmatter.title}
+        </Link>
+        &nbsp;-&nbsp;
+        {edge.node.frontmatter.date}
+      </div>
     ))}
   </Layout>
 )
@@ -22,7 +25,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMdx {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           parent {
@@ -35,6 +38,9 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
+            author
+            date(formatString: "DD MMMM, YYYY")
+            tags
           }
         }
       }

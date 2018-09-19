@@ -1,13 +1,10 @@
 .prism-code {
   display: block;
   white-space: pre;
-
   background-color: #1d1f21;
   color: #c5c8c6;
-
   padding: 0.5rem;
   margin: 0;
-
   box-sizing: border-box;
   vertical-align: baseline;
   outline: none;
