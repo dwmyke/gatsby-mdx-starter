@@ -51,6 +51,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             author
+            draft
             date(formatString: "DD MMMM, YYYY")
             tags
           }

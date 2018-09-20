@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { rhythm } from '../utils/typography'
 
 export const PureComponent = ({ text }) => (
-  <div style={{ color: 'red' }}>{text}</div>
+  <div style={{ color: 'red', marginBottom: rhythm(1) }}>{text}</div>
 )
 
 PureComponent.propTypes = {
@@ -27,7 +28,7 @@ class Counter extends React.Component {
   render() {
     return (
       <center>
-        <h3>
+        <h3 style={{marginTop: '6.5em'}}>
           {this.state.count}
         </h3>
       </center>
