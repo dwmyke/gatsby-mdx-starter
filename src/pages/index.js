@@ -1,14 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Bio from '../components/bio'
 import Link from '../components/link'
 import { rhythm } from '../utils/typography'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data, location }) => (
   <Layout location={location}>
+    <Bio />
     {data.allMdx.edges.map(({ node }) => (
       <div key={node.id}>
-        <h3
+        <h4
           style={{
             marginBottom: rhythm(1 / 4)
           }}
@@ -16,7 +18,7 @@ const IndexPage = ({ data, location }) => (
           <Link to={`/${node.parent.name}/`}>
             {node.frontmatter.title || node.parent.name}
           </Link>
-        </h3>
+        </h4>
         <small>{node.frontmatter.date}</small>
         <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
       </div>
