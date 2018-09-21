@@ -12,6 +12,7 @@ This is my own opinionated setup for what a Gatsby default baseline should be. I
 - ~~support frontmatter in .md and .mdx~~
 - ~~better 404 page~~
 - gatsby image
+- posts template (next, previous, title, date, etc)
 - Setup storybook (or similar)
 - Add test suite
   - Jest
