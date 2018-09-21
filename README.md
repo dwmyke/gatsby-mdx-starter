@@ -1,4 +1,4 @@
-# Gatsby Starter Pack
+# Gatsby MDX Starter
 
 This is my own opinionated setup for what a Gatsby default baseline should be. I began with [gatsby-starter-default v2](https://github.com/gatsbyjs/gatsby-starter-default) and started making modifications and enhancements from there. This is still a work in progress for the time being.
 
@@ -9,8 +9,8 @@ This is my own opinionated setup for what a Gatsby default baseline should be. I
 - ~~styled components or emotion~~
 - ~~typography~~
 - better encapsulation of react-live css. alternatively, submit PR back to react-live so they can better support "bring your own styles"
-- support frontmatter in .md and .mdx
-- better 404 page
+- ~~support frontmatter in .md and .mdx~~
+- ~~better 404 page~~
 - gatsby image
 - Setup storybook (or similar)
 - Add test suite
