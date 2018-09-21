@@ -1,5 +1,3 @@
-const path = require('path')
-
 module.exports = {
   siteMetadata: {
     title: 'gatsby mdx starter'
@@ -22,7 +20,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: path.join(__dirname, 'src', 'images')
+        path: `${__dirname}/src/images/`
       }
     },
     'gatsby-transformer-sharp',
@@ -46,6 +44,15 @@ module.exports = {
     {
       resolve: 'gatsby-mdx',
       options: {
+        gatsbyRemarkPlugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1000,
+              sizeByPixelDensity: true
+            }
+          }
+        ],
         defaultLayouts: {
           default: require.resolve('./src/components/layout.js')
         }
