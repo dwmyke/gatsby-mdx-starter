@@ -1,8 +1,27 @@
-![gatsby-mdx](./static/gatsby-mdx-rectangle.jpg)
-
-### Gatsby MDX Starter
+# Gatsby MDX Starter
 
 This Gatsby starter intends to be a full featured boilerplate for getting started with an MDX powered blog.
+
+![gatsby-mdx](./static/gatsby-mdx-rectangle.jpg)
+
+### Getting Started
+
+1. If you haven't already, install `gatsby-cli`... `npm install --global gatsby-cli`
+2. `gatsby new my-mdx-blog https://github.com/gatsby-mdx-starter/gatsby-mdx-starter`
+3. Create new blog posts as `.mdx` files inside of `src/pages`
+4. New posts should have the following frontmatter
+
+```
+export const frontmatter = {
+  title: 'Title goes here',
+  author: 'John Munson',
+  draft: false,
+  date: '2018-09-25T23:46:37.121Z',
+  tags: ['gatsby', 'mdx', 'blog']
+}
+```
+
+5. `gatsby develop`
 
 ### Todo
 
