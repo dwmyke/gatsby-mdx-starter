@@ -16,6 +16,7 @@
     "gatsby-plugin-sharp": "^2.0.5",
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-plugin-typography": "^1.7.19",
+    "gatsby-remark-images": "^2.0.2",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-sharp": "^2.1.1",
     "polished": "^2.0.3",
