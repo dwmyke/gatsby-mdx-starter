@@ -1,4 +1,4 @@
-![gatsby-mdx](./gatsby-mdx-rectangle.jpg)
+![gatsby-mdx](./static/gatsby-mdx-rectangle.jpg)
 
 ### Gatsby MDX Starter
 
