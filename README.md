@@ -1,18 +1,20 @@
-# Gatsby MDX Starter
+### Gatsby MDX Starter
 
-This is my own opinionated setup for what a Gatsby default baseline should be. I began with [gatsby-starter-default v2](https://github.com/gatsbyjs/gatsby-starter-default) and started making modifications and enhancements from there. This is still a work in progress for the time being.
+This Gatsby starter intends to be a full featured boilerplate for getting started with an MDX powered blog.
 
 ### Todo
 
-- ~~mdx (or filestystem plugin combined w/ markdown plugin)~~
 - update prettier to support mdx
-- ~~styled components or emotion~~
-- ~~typography~~
-- better encapsulation of react-live css. alternatively, submit PR back to react-live so they can better support "bring your own styles"
-- ~~support frontmatter in .md and .mdx~~
-- ~~better 404 page~~
-- gatsby image
+- local mdx images (see issue @ gatsby-mdx)
+- index page pagination
+- keyword search
+- tag filtering
 - posts template (next, previous, title, date, etc)
+- google analytics
+- page for popular posts (powered by analytics)
+- about page
+- commenting system
+- better encapsulation of react-live css. alternatively, submit PR back to react-live so they can better support "bring your own styles"
 - Setup storybook (or similar)
 - Add test suite
   - Jest
