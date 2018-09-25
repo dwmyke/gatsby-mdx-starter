@@ -36,6 +36,7 @@ export const frontmatter = {
 - commenting system
 - better encapsulation of react-live css. alternatively, submit PR back to react-live so they can better support "bring your own styles"
 - update prettier to support mdx
+- make sure I'm using /static correctly
 - Setup storybook (or similar)
 - Add test suite
   - Jest
