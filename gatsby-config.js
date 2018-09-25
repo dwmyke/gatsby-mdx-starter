@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'gatsby mdx starte'
+    title: 'gatsby mdx starter'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
