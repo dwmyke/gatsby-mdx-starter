@@ -7,7 +7,7 @@ import PropTypes from 'prop-types'
 
 const Header = ({ siteTitle, location }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  if (location.pathname === rootPath) {
+  if (location && location.pathname === rootPath) {
     return (
       <Headroom
         style={{
