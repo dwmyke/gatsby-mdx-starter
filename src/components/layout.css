@@ -1,14 +1,14 @@
-body {
+html {
   font-size: 2.4vw;
   text-ren­der­ing: op­ti­mize­Leg­i­bil­ity;
 }
 @media all and (min-width: 1000px) {
-  body {
+  html {
     font-size: 24px;
   }
 }
 @media all and (max-width: 520px) {
-  body {
+  html {
     font-size: 18px;
   }
 }
