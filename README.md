@@ -25,8 +25,7 @@ export const frontmatter = {
 
 ### Todo
 
-- update prettier to support mdx
-- local mdx images (see issue @ gatsby-mdx)
+- local mdx images (see [issue](https://github.com/ChristopherBiscardi/gatsby-mdx/issues/152) @ gatsby-mdx)
 - index page pagination
 - keyword search
 - tag filtering
@@ -36,6 +35,7 @@ export const frontmatter = {
 - about page
 - commenting system
 - better encapsulation of react-live css. alternatively, submit PR back to react-live so they can better support "bring your own styles"
+- update prettier to support mdx
 - Setup storybook (or similar)
 - Add test suite
   - Jest
