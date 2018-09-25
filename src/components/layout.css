@@ -1,6 +1,6 @@
 html {
   font-size: 2.4vw !important;
-  text-ren­der­ing: op­ti­mize­Leg­i­bil­ity;
+  text-rendering: optimizeLegibility;
 }
 @media all and (min-width: 1000px) {
   html {
