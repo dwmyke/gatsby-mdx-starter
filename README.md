@@ -1,3 +1,5 @@
+![gatsby-mdx](./gatsby-mdx-rectangle.jpg)
+
 ### Gatsby MDX Starter
 
 This Gatsby starter intends to be a full featured boilerplate for getting started with an MDX powered blog.
