@@ -9,7 +9,8 @@ const typography = new Typography({
   bodyFontFamily: ['Source Serif Pro', 'Georgia', 'serif'],
   headerGray: 20,
   bodyGray: 20,
-  blockMarginBottom: 1
+  blockMarginBottom: 1,
+  includeNormalize: false
 })
 
 // Hot reload typography in development.
