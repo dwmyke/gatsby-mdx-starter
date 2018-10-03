@@ -22,7 +22,13 @@ const IndexPage = ({ data, location }) => (
               </Link>
             </h4>
             <small>{node.frontmatter.date}</small>
-            <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            <p
+              dangerouslySetInnerHTML={{
+                __html: node.excerpt.slice(
+                  (node.frontmatter.title.length || node.parent.name.length) + 1
+                )
+              }}
+            />
           </div>
         )
     )}
