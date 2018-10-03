@@ -1,7 +1,7 @@
 export const frontmatter = {
   title: 'Using Images With MDX',
   author: 'John Munson',
-  draft: false,
+  draft: true,
   date: '2016-12-08T23:46:37.121Z',
   tags: ['images', 'mdx']
 }
