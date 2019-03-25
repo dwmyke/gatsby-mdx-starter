@@ -11,14 +11,14 @@ const Header = ({ siteTitle, location }) => {
     return (
       <Headroom
         style={{
-          margin: '0 auto',
-          maxWidth: rhythm(22),
           background: 'white',
           boxShadow: '0px 15px 10px -15px gray'
         }}
       >
         <div
           style={{
+            margin: '0 auto',
+            maxWidth: rhythm(22),
             ...scale(1.25),
             padding: `${rhythm(0.25)} ${rhythm(0.5)}`
           }}
