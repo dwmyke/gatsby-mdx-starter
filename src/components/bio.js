@@ -14,16 +14,13 @@ const Bio = ({ data }) => (
     <div style={{ marginRight: rhythm(0.5) }}>
       <Img
         fixed={data.file.childImageSharp.fixed}
-        alt={`John Munson`}
+        alt={`Mikel-Jon West`}
         style={{ borderRadius: '50%' }}
       />
     </div>
     <div style={{ fontSize: '0.8em' }}>
-      Written by <strong>John Munson</strong> who lives and works in St. Louis
-      building useful things.{' '}
-      <a href="https://twitter.com/curtismunson">
-        You should follow him on Twitter.
-      </a>
+      Written by <strong>Mikel-Jon West</strong> who lives and works in
+      Portland, Oregon. <a href="https://facebook.com/thatmikewest">Facebook</a>
     </div>
   </div>
 )
@@ -32,7 +29,7 @@ export default props => (
   <StaticQuery
     query={graphql`
       query {
-        file(relativePath: { eq: "avatar.png" }) {
+        file(relativePath: { eq: "profile.png" }) {
           childImageSharp {
             fixed(width: 75) {
               ...GatsbyImageSharpFixed
